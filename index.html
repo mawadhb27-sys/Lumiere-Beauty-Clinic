@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière Beauty Clinic</title>
+  <meta name="description" content="Lumière Beauty Clinic — clinical precision meets spa serenity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:wght@300;400;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page-loader">
+    <div class="loader-icon-wrap"><img src="images/logo-icon.png" alt="Lumière" class="loader-icon"></div>
+    <div class="loader-line"></div>
+  </div>
+
+  <nav id="nav" class="nav-animate">
+    <div class="nav-inner container">
+      <button class="logo-btn" data-scroll="hero" aria-label="Lumière home"><img src="images/logo-header.png" alt="Lumière Beauty Clinic"></button>
+      <div class="desktop-nav" id="desktop-nav"></div>
+      <div class="desktop-actions">
+        <button id="lang-toggle" class="lang-btn">عربي</button>
+        <button class="book-btn" data-scroll="contact" data-i18n="bookNow">Book Now</button>
+      </div>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu"></div>
+  </nav>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-transition"></div>
+      <img id="hero-img" class="hero-img" src="https://images.unsplash.com/photo-1782159981435-78545e10428a?w=1800&h=1200&fit=crop&auto=format" alt="Luxury facial treatment at Lumière Clinic">
+      <div class="hero-overlay"></div>
+      <div class="hero-sweep"></div>
+      <div class="container hero-content">
+        <p class="hero-fade hero-kicker" data-i18n="heroKicker"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero-fade hero-description" data-i18n="heroDescription"></p>
+        <div class="hero-fade hero-buttons">
+          <button class="primary-btn" data-scroll="contact" data-i18n="consultation">Book a Consultation</button>
+          <button class="outline-btn" data-scroll="services" data-i18n="explore">Explore Services</button>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator"><span></span><small data-i18n="scroll">Scroll to explore</small></div>
+    </section>
+
+    <div class="marquee-wrap"><div id="marquee" class="marquee-track"></div></div>
+
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow reveal" data-i18n="whatOffer">— What We Offer</p><h2 class="display reveal" data-delay="1" id="services-title"></h2></div>
+          <p class="section-intro reveal" data-delay="2" id="services-intro"></p>
+        </div>
+        <div id="services-grid" class="services-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="wipe"><img id="about-img" src="https://images.unsplash.com/photo-1782159981479-0fafb56d3cd6?w=800&h=960&fit=crop&auto=format" alt="Expert aesthetician at Lumière Clinic"></div>
+          <div class="quote-card reveal" data-delay="3"><p id="quote-text"></p><span id="quote-author"></span></div>
+        </div>
+        <div>
+          <p class="eyebrow reveal" data-i18n="philosophy">— Our Philosophy</p>
+          <h2 class="display reveal" data-delay="1" id="about-title"></h2>
+          <div class="about-copy" id="about-copy"></div>
+          <div id="stats-grid" class="stats-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section results-section">
+      <div class="container"><div class="results-head"><p class="eyebrow reveal" data-i18n="ourWork">— Our Work</p><h2 class="display light reveal" data-delay="1" id="results-title"></h2></div><div id="results-grid" class="results-grid"></div></div>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container"><p class="eyebrow reveal" data-i18n="clientVoices">— Client Voices</p><div class="testimonial-grid">
+        <div class="testimonial-main reveal"><div id="testimonial-main"></div><div id="testimonial-dots" class="testimonial-dots"></div></div>
+        <div id="testimonial-list" class="testimonial-list reveal" data-delay="2"></div>
+      </div></div>
+    </section>
+
+    <section class="section why-section"><div class="container"><div class="why-head"><p class="eyebrow reveal" data-i18n="difference">— The Lumière Difference</p><h2 class="display reveal" data-delay="1" id="why-title"></h2></div><div id="why-grid" class="why-grid"></div></div></section>
+
+    <section id="contact" class="section contact-section"><div class="container contact-grid">
+      <div><p class="eyebrow reveal" data-i18n="bookConsultation">— Book a Consultation</p><h2 class="display light reveal" data-delay="1" id="contact-title"></h2><p class="contact-intro reveal" data-delay="2" id="contact-intro"></p><div id="contact-info" class="contact-info reveal" data-delay="3"></div></div>
+      <div id="form-area" class="reveal" data-delay="2"></div>
+    </div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><img src="images/logo-header.png" alt="Lumière Beauty Clinic"><div id="footer-links"></div><p data-i18n="copyright">© 2026 Lumière Clinic. All rights reserved.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
